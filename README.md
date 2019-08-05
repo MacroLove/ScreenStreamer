@@ -23,8 +23,16 @@ Install & Run ScreenStreamer
    ```bash
    # need install libjpeg/libjpeg-turbo, on windows, need install mingw, libjpeg/libjpeg-turbo for mjpeg
    sudo apt-get install libjpeg-turbo8-dev
+   
    # need install libav, on windows, need install mingw, libav for rtmp
    sudo apt-get install ffmpeg libavcodec-dev libavformat-dev --fix-missing
+   
+   # go for ubuntu
+   wget https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz
+   tar -C /usr/local -xzf go1.12.7.linux-amd64.tar.gz
+   echo "export PATH=$PATH:/usr/local/go/bin" >> $HOME/.profile
+   source $HOME/.profile
+   
    # create a workspace directory
    mkdir ./ScreenStreamer
    # enter the directory
