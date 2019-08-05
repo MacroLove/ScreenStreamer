@@ -27,6 +27,9 @@ Install & Run ScreenStreamer
    # need install libav, on windows, need install mingw, libav for rtmp
    sudo apt-get install ffmpeg libavcodec-dev libavformat-dev --fix-missing
    
+   # need gcc build tools
+   sudo apt-get  install  build-essential
+   
    # go for ubuntu
    wget https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz
    tar -C /usr/local -xzf go1.12.7.linux-amd64.tar.gz
